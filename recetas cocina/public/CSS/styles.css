@@ -1,0 +1,241 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Fuente elegante y fresca */
+    background: rgb(12, 12, 12);
+    /* Color de fondo oscuro */
+    color: #ffffff;
+    /* Color del texto en blanco */
+    margin: 0;
+    /* Eliminar margen por defecto del body */
+    padding: 0;
+    /* Eliminar padding por defecto del body */
+
+    /* Cambiar el cursor a una imagen */
+    cursor: url('imagenes/icons8-galleta-94.png'), auto;
+    /* Ajusta el cursor a una imagen de galleta */
+    /* Asegúrate de que la ruta sea correcta */
+}
+
+/* Header con color marrón */
+header {
+    background-color: #f0b104;
+    /* Color de fondo del header */
+    display: flex;
+    /* Usar flexbox para alinear elementos */
+    align-items: center;
+    /* Alinear verticalmente al centro */
+    justify-content: space-between;
+    /* Espacio entre los elementos del header */
+    padding: 20px 50px;
+    /* Espacio interior del header */
+    border-bottom: 8px solid #966a19;
+    /* Borde inferior del header */
+    width: 100vw;
+    /* Ancho total de la ventana */
+    box-sizing: border-box;
+    /* Incluir padding y border en el ancho total */
+    margin: 100 auto;
+    /* Centrar el header horizontalmente */
+}
+
+/* Logo en el header */
+.logo img {
+    width: 100px;
+    /* Tamaño del logo */
+    height: auto;
+    /* Mantener la proporción del logo */
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    /* Eliminar viñetas de la lista */
+    display: flex;
+    /* Usar flexbox para el menú */
+    margin: 0;
+    /* Sin margen por defecto */
+    padding: 0;
+    /* Sin padding por defecto */
+}
+
+nav ul li {
+    margin-left: 30px;
+    /* Espacio a la izquierda de cada elemento del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* Sin subrayado en los enlaces */
+    color: #ffffff;
+    /* Color del texto en blanco */
+    font-weight: bold;
+    /* Texto en negrita */
+    font-size: 18px;
+    /* Tamaño de fuente más grande */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    /* Subrayar texto al pasar el cursor */
+}
+
+/* Secciones principales */
+.main-section {
+    background-image: url('../imagenes/img-95.jpeg');
+    /* Imagen de fondo para las secciones */
+    border: 3px solid rgb(241, 180, 10);
+    /* Borde color amarillo */
+    border-radius: 15px;
+    /* Esquinas redondeadas */
+    padding: 30px;
+    /* Espacio interior en las secciones */
+    margin: 20px auto;
+    /* Margen entre las secciones y centrado */
+    width: 60%;
+    /* Ancho de las secciones */
+    height: auto;
+    /* Altura automática según el contenido */
+    color: #000000;
+    /* Texto negro dentro de las secciones */
+    text-align: center;
+    /* Centrar texto */
+    box-shadow: 0 9px 15px rgba(235, 193, 7, 0.918),
+        /* Sombra lateral */
+        0 4px 30px rgba(0, 0, 0, 0.5);
+    /* Sombra más suave para efecto de profundidad */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Animación de transición */
+}
+
+/* Efecto hover para 3D en los cuadros */
+.main-section:hover {
+    transform: translateY(-8px) scale(1.02);
+    /* Levanta el cuadro y lo escala ligeramente */
+    box-shadow: 0 16px 30px rgba(243, 199, 3, 0.6),
+        /* Sombra más intensa al hacer hover */
+        0 8px 60px rgba(0, 0, 0, 0.7);
+    /* Aumenta la sombra para un efecto más profundo */
+}
+
+/* Organizamos los cuadros de forma vertical */
+main {
+    display: flex;
+    /* Usar flexbox para el main */
+    flex-direction: column;
+    /* Colocar los elementos en columna (vertical) */
+    justify-content: center;
+    /* Centra los elementos verticalmente */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+    padding: 20px 0;
+    /* Espacio adicional en la parte superior e inferior */
+}
+
+/* Estilo para el menú flotante */
+.floating-menu {
+    position: fixed;
+    /* Posiciona el menú de manera fija */
+    top: 50%;
+    /* Centrar verticalmente en la ventana */
+    transform: translateY(-50%);
+    /* Ajusta la posición para centrar */
+    left: 0;
+    /* Posición desde la izquierda */
+    display: flex;
+    /* Usar flexbox para alinear iconos */
+    flex-direction: column;
+    /* Colocar iconos en columna */
+    gap: 10px;
+    /* Espaciado entre los iconos */
+}
+
+/* Estilo para los iconos del menú flotante */
+.floating-menu img {
+    width: 90px;
+    /* Tamaño inicial de los iconos */
+    transition: transform 0.3s ease;
+    /* Transición suave al hacer hover */
+}
+
+/* Efecto de aumento al pasar el cursor en iconos */
+.floating-menu img:hover {
+    transform: scale(1.2);
+    /* Aumenta el tamaño del icono al 120% */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex;
+    /* Usar flexbox para el formulario */
+    flex-direction: column;
+    /* Colocar elementos en columna */
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+}
+
+/* Campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 90%;
+    /* Más estrecho que el contenedor */
+    padding: 12px;
+    /* Espacio interior en los campos */
+    margin: 10px 0;
+    /* Margen superior e inferior */
+    border: 2px solid #0a0a0a;
+    /* Borde de los campos */
+    border-radius: 10px;
+    /* Esquinas redondeadas en los campos */
+    font-size: 20px;
+    /* Tamaño de fuente para los campos */
+    font-weight: bold;
+    /* Texto en negrita en los campos */
+}
+
+/* Estilo de los botones */
+button {
+    padding: 12px 25px;
+    /* Espacio interior en los botones */
+    background-color: #daa105;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto en blanco */
+    border: none;
+    /* Sin borde */
+    border-radius: 20px;
+    /* Esquinas redondeadas en los botones */
+    cursor: pointer;
+    /* Cambiar cursor a pointer al pasar sobre el botón */
+    font-size: 22px;
+    /* Tamaño de fuente del botón */
+    font-weight: bold;
+    /* Texto en negrita en los botones */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Transiciones para el efecto */
+    margin: 10px;
+    /* Margen alrededor de los botones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Efecto de sombra en botones */
+}
+
+/* Efecto hover en los botones */
+button:hover {
+    background-color: #2980b9;
+    /* Cambia el color de fondo al pasar el cursor */
+    transform: scale(1.05);
+    /* Efecto de agrandar ligeramente el botón */
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    /* Centrar el texto en el pie de página */
+    padding: 20px;
+    /* Espacio interior del pie de página */
+    background-color: #e6b208;
+    /* Color de fondo del pie de página */
+    color: #ffffff;
+    /* Color del texto en blanco */
+}
